@@ -1,22 +1,22 @@
 #! /usr/bin/env node
 
-import coreProgram from './settings.mjs';
+import core from './settings.mjs';
 
-coreProgram
+core
   .command('best')
   .description('Get a random post from the best posts page')
   .action(() => {
     console.log('best');
   });
 
-coreProgram
+core
   .command('hot')
   .description('Get a random post from the hot posts page')
   .action(() => {
     console.log('hot');
   });
 
-coreProgram
+core
   .command('new')
   .description('Get a random post from the new posts page')
   .action(() => {
@@ -24,7 +24,7 @@ coreProgram
   });
 
 // gets a random top post from the top posts page, supporting the time
-coreProgram
+core
   .command('top')
   .option('-h, --hour', 'Random post from the Top posts that were made just now')
   .option('-d, --day', 'Random post from the top posts of today')
@@ -39,7 +39,7 @@ coreProgram
     console.log(option);
   });
 
-coreProgram
+core
   .command('subreddit <subredditName>')
   .alias('sub')
   .description('Get a random post from a specific subreddit')
@@ -48,7 +48,7 @@ coreProgram
   });
 
 // Gets user details. Supports -r --random & -l --latest flags.
-coreProgram
+core
   .command('user <username>')
   .alias('u')
   .option('-l, --latest', 'Get the latest post from the user')
@@ -59,4 +59,4 @@ coreProgram
     console.log(options);
   });
 
-coreProgram.parse(process.argv);
+core.parse(process.argv);
