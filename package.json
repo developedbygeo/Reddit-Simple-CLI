@@ -1,0 +1,35 @@
+{
+  "name": "reddit-simple-cli",
+  "version": "1.0.0",
+  "description": "A simple cli to view content on Reddit",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "reddit": "./cli.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developedbygeo/Reddit-Simple-Cli.git"
+  },
+  "keywords": [
+    "reddit",
+    "reddit-cli",
+    "cli-for-reddit",
+    "cli-reddit",
+    "reddit-preview"
+  ],
+  "author": "developedbygeo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developedbygeo/Reddit-Simple-Cli/issues"
+  },
+  "homepage": "https://github.com/developedbygeo/Reddit-Simple-Cli#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.3.0",
+    "node-fetch": "^3.2.6",
+    "open": "^8.4.0"
+  }
+}
