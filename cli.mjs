@@ -2,6 +2,9 @@
 
 import core from './settings.mjs';
 
+const extraOptions = core.opts();
+core.option('-o, --open', 'Open the url in the default browser');
+
 core
   .command('best')
   .description('Get a random post from the best posts page')
@@ -57,6 +60,7 @@ core
   .action((username, options) => {
     console.log(username);
     console.log(options);
+    console.log(extraOptions);
   });
 
 core.parse(process.argv);
